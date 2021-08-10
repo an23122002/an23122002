@@ -1,0 +1,8 @@
+CREATE TABLE `donate` (
+  `Name` varchar(100) NOT NULL,
+  `Address` varchar(100) NOT NULL,
+  `Phonenumber` varchar(100) NOT NULL,
+  `DonateAmount` varchar(100) NOT NULL,
+  `Note` varchar(100) NOT NULL,
+  PRIMARY KEY (`Name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
