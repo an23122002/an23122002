@@ -1,6 +1,10 @@
 <html>
 <head>
 <style>
+
+body {
+  background-image: url("white.jpg");
+}
 div {
 	width: 325px;
 	height: 250px;
@@ -16,21 +20,34 @@ div {
 }
 
 table {
-	  width: 150%;
-  height: 200px;
-	border-collapse: collapse
+	
+	font-weight: bold;
 	width: 100%;
+	height: 150px;
+	 border-bottom: 5px solid #ddd;
+	border: 3px solid black;
 	color: blue
 	font-family: monospace;
-	font-size: 25px;
+	font-size: 20px;
 	text-align: left;
 }
 
 th{
+	border: 3px solid black;
+	border-collapse: collapse;
+	font-family: monospace;
+	font-size: 25px;
+	text-align: center;
+	font-weight: bold;
 	background-color: red;
 	color: white;
 }
-tr:nth-child(even) {background-color: #ededed}
+tr{
+	border-collapse: collapse;
+	border: 9px solid black;
+}
+tr:nth-child(even) {background-color: #ededed
+border: 3px solid black;}
 </style>
 </head>
 <body>
@@ -39,8 +56,8 @@ tr:nth-child(even) {background-color: #ededed}
 <div  class="center" align="center">
 <th>Name</th>
 <th>Address</th>
-<th>PhoneNumber</th>
-<th>DonationAmount</th>
+<th>Phone Number</th>
+<th>Donation Amount</th>
 <th>Note</th>
 </div>
 </tr>
