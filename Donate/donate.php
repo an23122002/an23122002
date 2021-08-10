@@ -48,8 +48,18 @@ div {
 			echo $phonenumber.'<br>Donation Amount: ';
 			echo $Donationamount. ' VND <br>';
 		
+
+$conn = mysqli_connect('localhost', 'root', '');
+$database = mysqli_select_db($conn, 'donate');
+$sql = "INSERT INTO	donate(Name,Address,Phonenumber,DonateAmount,Note) VALUES('$name','$address','$phonenumber','$Donationamount','$Note')";	
 	
-		
+	if( mysqli_query($conn, $sql)){
+		echo '-----';
+	}
+	
+	else{
+		echo 'query error: ' . mysqli_error($conn);
+	}
 	
 		?>
 	</div>	
